@@ -1,14 +1,14 @@
-import { MenuItems } from './MenuList'
 import React from 'react'
-
+import { MenuItems } from './MenuList'
 function Menu() {
-    const details = MenuItems.map((item) => {
-            <p>My name is {item.name}, I am {item.age}</p>
-    })
     return (
-        {
-          details  
-        }
+       <div>
+        {MenuItems.map((item,index) => {
+            return(
+                <p key={item.key}> My name is {item.name}, I am {item.age}</p>
+            )
+        })}
+       </div> 
     )
 }
 
