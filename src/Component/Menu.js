@@ -1,19 +1,11 @@
 import React from 'react'
 
-function Menu(a, b) {
-    const add = a + b;
-    const subtract = a - b;
-    const multiply = a * b;
-    const divide = a / b;
-    
-    return [add, subtract, multiply, divide](
-        
-        )
-    }
-    const [add, subtract, multiply, divide] = Menu(4, 7);
-    <p>Sum: {add} </p> 
-  
-  
+function Menu() {
+    const vehicles = ['mustang', 'f-150', 'expedition'] 
+    const [car, truck, suv] = vehicles;
 
+    return <p> I have a {car}, with a model of {truck}. and it is {suv}</p>
+    
+}
 export default Menu
 
