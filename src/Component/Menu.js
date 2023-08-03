@@ -1,11 +1,20 @@
 import React from 'react'
 
 function Menu() {
-    const vehicles = ['mustang', 'f-150', 'expedition'] 
-    const [car, truck, suv] = vehicles;
-
-    return <p> I have a {car}, with a model of {truck}. and it is {suv}</p>
-    
+    function calculate(a,b) {
+        const add = a+b;
+        const subtract = a-b;
+        const multiply = a*b;
+        const divide = a/b;
+    return [add, subtract, multiply, divide];
+}
+    return (
+        <div>
+            {calculate(10,5)}
+            <p> add :</p>
+            {alert(add)}
+        </div>
+    )
 }
 export default Menu
 
