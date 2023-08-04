@@ -8,11 +8,14 @@ function Menu() {
         const divide = a/b;
     return [add, subtract, multiply, divide];
 }
+const [add,subtract,multiply,divide] = calculate(1000000000,1000000000)
     return (
         <div>
-            {calculate(10,5)}
-            <p> add :</p>
-            {alert(add)}
+            <p> add : {add}</p>
+            <p> subtract : {subtract}</p>
+            <p> multiply : {multiply}</p>
+            <p> divide : {divide}</p>
+            
         </div>
     )
 }
