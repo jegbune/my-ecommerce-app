@@ -1,53 +1,30 @@
-import React from 'react'
+import React, { Component } from "react";
 
-function Menu() {
-    let authentication = true;
-    function renderApp(){
-        return <p>Welcome</p>
+class Menu extends Component {
+    constructor() {
+        super()
+        this.state = {
+            Brand: 'Ford',
+            Model: 'Mustang',
+            Color: 'red',
+            Year: 1964
+        }
+    }
+
+    changeColor =() => {
+        this.setState ({Color: 'blue'})
     }
     
-    function renderLogin(){
-        return <p>Login</p>
+    render() {
+        return(
+            <>
+            <p>I have a {this.state.Brand + ' ' + this.state.Model}, it's a {this.state.Color} color. it was manufactured in the Year {this.state.Year}</p>
+            <button onClick={this.changeColor} >Change Color</button>
+            </>
+        
+            )
     }
 
-     return (
-        <div>
-            {authentication ? renderApp() : renderLogin()}
-
-        </div>
-        // {
-        //     if (status){
-        //     `<p>Welcome!</p>`
-        // }
-        // else if (!status){
-        //     `<p>Login</p>`
-        // }
-    // }
-     )
-
-    //        const Vehicle= {
-    //            brand: 'Toyota',
-    //            Model: 'Prado',
-    //            type: 'SUV',
-    //            year: 2021,
-    //            color: 'red',
-    //            registration: {
-    //                city: 'Oshodi',
-    //                state: 'Lagos',
-    //                country: 'Nigeria'
-    //        } 
-    //     }
-
-    //     vehicleOne(Vehicle)
-
-    //     function vehicleOne ({brand,Model,type,registration: { state }}) {
-    //         return <p> I have a {brand +' '+ Model +' '+ type}. I bought in {state} </p>
-    //     }
-    //     return (
-    //         <div>
-    //         {vehicleOne(Vehicle)}            
-    //     </div>
-    // )
 }
-export default Menu
 
+export default Menu
