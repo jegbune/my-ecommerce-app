@@ -1,15 +1,19 @@
 import React from 'react'
-import { MenuItems } from './MenuList'
-function Menu() {
-    return (
-       <div>
-        {MenuItems.map((item,index) => {
-            return(
-                <p key={item.key}> My name is {item.name}, I am {item.age}</p>
-            )
-        })}
-       </div> 
-    )
-}
+
+function Menu(a, b) {
+    const add = a + b;
+    const subtract = a - b;
+    const multiply = a * b;
+    const divide = a / b;
+    
+    return [add, subtract, multiply, divide](
+        
+        )
+    }
+    const [add, subtract, multiply, divide] = Menu(4, 7);
+    <p>Sum: {add} </p> 
+  
+  
 
 export default Menu
+
