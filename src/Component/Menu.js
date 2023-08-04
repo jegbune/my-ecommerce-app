@@ -12,7 +12,7 @@ function Menu() {
 
      return (
         <div>
-            {/* {authentication ? renderApp() : renderLogin()} */}
+            {authentication ? renderApp() : renderLogin()}
 
         </div>
         // {
