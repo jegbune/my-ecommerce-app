@@ -1,8 +1,28 @@
 import React from 'react'
 
 function Menu() {
+    let authentication = true;
+    function renderApp(){
+        return <p>Welcome</p>
+    }
     
+    function renderLogin(){
+        return <p>Login</p>
+    }
+
      return (
+        <div>
+            {authentication ? renderApp() : renderLogin()}
+
+        </div>
+        // {
+        //     if (status){
+        //     `<p>Welcome!</p>`
+        // }
+        // else if (!status){
+        //     `<p>Login</p>`
+        // }
+    // }
      )
 
     //        const Vehicle= {
