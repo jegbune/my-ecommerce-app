@@ -1,11 +1,11 @@
 import React from 'react'
 
 function Menu() {
-    const shoot = (a) => {
-        alert(a)
+    const shoot = (a, b) => {
+        alert(b.type +' '+ a)
     }
     return (
-        <button onClick={() => {shoot('Goal!')}}>Give it a shoot</button>
+        <button onClick={(event) => {shoot('Goal!', event)}}>Give it a shoot</button>
     )
 }
 
