@@ -1,13 +1,13 @@
 import React from 'react'
 
 function Menu() {
-    const access = false
+    const cars = ['Toyota', 'Audi', 'Mercedi Benz', 'Nissan', 'Ferrari', 'Cadallac']
     return (
         <>
-        <h1>This is the expression of the code</h1>
-        {access && <h2>This is the expression</h2>}
-        </>
+        {cars.map((car) => (<h1>I have {car} car</h1>))}
+        </>        
     )
 }
 
 export default Menu
+
