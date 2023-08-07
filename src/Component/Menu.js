@@ -1,11 +1,12 @@
 import React from 'react'
 
 function Menu() {
-    const shoot = (a, b) => {
-        alert(b.type +' '+ a)
-    }
+    const access = false
     return (
-        <button onClick={(event) => {shoot('Goal!', event)}}>Give it a shoot</button>
+        <>
+        <h1>This is the expression of the code</h1>
+        {access && <h2>This is the expression</h2>}
+        </>
     )
 }
 
