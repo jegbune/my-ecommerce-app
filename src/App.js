@@ -1,11 +1,12 @@
 // import logo from './logo.svg';
 import './App.css';
 import Menu from './Component/Menu';
-
+import Form from './Component/Form'
 function App() {
   return (
     <div className="App">
-      <Menu />
+      {/* <Menu /> */}
+      <Form />
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

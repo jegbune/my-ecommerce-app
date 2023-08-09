@@ -1,1 +1,0 @@
-export const vehicle = ['BMW', 'Fiat', 'Toyota', 'Audi', 'Mercedi Benz', 'Nissan', 'Ferrari', 'Cadallac']
