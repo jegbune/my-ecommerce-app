@@ -8,6 +8,7 @@ function Form() {
         event.preventDefault() 
         alert(text)
     }
+    
     const handleChange = (event) =>{
        setName(event.target.name)
     }
