@@ -2,10 +2,12 @@
 import './App.css';
 import Menu from './Component/Menu';
 import Form from './Component/Form'
+import Crud from './Component/Crud';
 function App() {
   return (
     <div className="App">
-      <Menu />
+      <Crud />
+      {/* <Menu /> */}
       {/* <Form /> */}
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
