@@ -2,42 +2,49 @@ import React, { useState } from 'react'
 
 function Crud() {
 
-    const [fName, setFName] = useState('')
-    const [lName, setLName] = useState('')
-    const [Email, setEmail] = useState('')
-    const [DOB, setDOB] = useState('')
-    const [Age, setAge] = useState('')
+    const [input, setInput] = useState({})
 
-    const handleFNameChange = (event) => {
-        setFName(event.target.value)
+    const handleChange = (event) => {
+        const name = event.target.name;
+        const value = event.target.value;
+        setInput( values => ({...values,[name]:value}))
     }
-    const handleLNameChange = (event) => {
-        setLName(event.target.value)
-    }
-    const handleEmailChange = (event) => {
-        setEmail(event.target.value)
-    }
-    const handleAgeChange = (event) => {
-        setAge(event.target.value)
-    }
+    // const [fName, setFName] = useState('')
+    // const [lName, setLName] = useState('')
+    // const [Email, setEmail] = useState('')
+    // const [DOB, setDOB] = useState('')
+    // const [Age, setAge] = useState('')
 
-    const handleDOBChange = (event) => {
-        setDOB(event.target.value)
-    }
+    // const handleFNameChange = (event) => {
+    //     setFName(event.target.value)
+    // }
+    // const handleLNameChange = (event) => {
+    //     setLName(event.target.value)
+    // }
+    // const handleEmailChange = (event) => {
+    //     setEmail(event.target.value)
+    // }
+    // const handleAgeChange = (event) => {
+    //     setAge(event.target.value)
+    // }
+
+    // const handleDOBChange = (event) => {
+    //     setDOB(event.target.value)
+    // }
 
     const handleSubmit =(event) => {
-    //    event.preventDefault();
+       event.preventDefault();
         
-    }
+    };
 
     return (
-        <form onSubmit={handleSubmit()}>
+        <form onSubmit={handleSubmit}>
             <label>Enter your First name:
                 <input
                 type='text'
                 name = 'FirstName'
-                value={fName}
-                onChange={handleFNameChange} 
+                value={input.FirstName || ''}
+                onChange={handleChange} 
                 />
             </label>
             
@@ -45,42 +52,43 @@ function Crud() {
                 <input
                 type='text'
                 name = 'LastName'
-                value={lName}
-                onChange={handleLNameChange} 
+                value={input.LastName || ''}
+                onChange={handleChange} 
                 />
             </label>
             <label>Enter your Email:
                 <input
                 type='text'
                 name = 'Email'
-                value={Email}
-                onChange={handleEmailChange} 
+                value={input.Email || ''}
+                onChange={handleChange} 
                 />
             </label>
             <label>Enter your Age:
                 <input
                 type='number'
                 name = 'Age'
-                value={Age}
-                onChange={handleAgeChange} 
+                value={input.Age || ''}
+                onChange={handleChange} 
                 />
             </label>
             <label>Enter your Date of Birth:
                 <input
                 type='Date'
                 name = 'DOB'
-                value={DOB}
-                onChange={handleDOBChange} 
+                value={input.DOB || ''}
+                onChange={handleChange} 
                 />
             </label>
             <div>
-                <p>Your First Name: {fName}</p>
-                <p>Your Last Name: {lName}</p>
-                <p>Your Email: {Email}</p>
-                <p>Your Age{Age}</p>
-                <p>Your Date of birth:{DOB}</p>
+                <p>Your First Name: {input.FirstName || ''}</p>
+                <p>Your Last Name: {input.LastName || ''}</p>
+                <p>Your Email: {input.Email || ''}</p>
+                <p>Your Age{input.Age || ''}</p>
+                <p>Your Date of birth: {input.DOB || ''}</p>
             </div>
-            
+            <input type='submit' />
+
         </form>
     )
 }
