@@ -20,11 +20,9 @@ function Crud() {
         setAge(event.target.value)
     }
 
-    const handleSubmit = (event) => {
-        event.preventDefault()
-        return{
-            fName, lName, Email, Age
-        }
+    const handleSubmit =(event) => {
+    //    event.preventDefault();
+        
     }
 
     return (
@@ -56,18 +54,19 @@ function Crud() {
             </label>
             <label>Enter your Age:
                 <input
-                type='text'
-                name = 'FirstName'
-                value={fName}
-                onChange={handleFNameChange} 
+                type='number'
+                name = 'Age'
+                value={Age}
+                onChange={handleAgeChange} 
                 />
             </label>
-
-            <p>{fName}</p>
-            <p>{lName}</p>
-            <p>{Email}</p>
-            <p>{Age}</p>
-
+            <div>
+                <p>{fName}</p>
+                <p>{lName}</p>
+                <p>{Email}</p>
+                <p>{Age}</p>
+            </div>
+            
         </form>
     )
 }
