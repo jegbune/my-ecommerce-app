@@ -3,7 +3,7 @@ import './App.css';
 import Menu from './Component/Menu';
 import Form from './Component/Form'
 import Crud from './Component/Crud';
-import { BrowserRouter,Routes, Route} from 'react-router-dom'
+import {Routes, Route} from 'react-router-dom'
 import Layout from './pages/Layout'
 import Home from './pages/Home'
 import Blogs from './pages/Blogs'
@@ -13,7 +13,7 @@ import NoPage from './pages/NoPage';
 function App() {
   return (
 
-      <BrowserRouter>
+      <div className='App'>
         <Routes>
           <Route path='/' element={<Layout />}>
             <Route index element={<Home />} />
@@ -22,7 +22,7 @@ function App() {
             <Route path='*' element={<NoPage />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </div>
 
     // <div className="App">
     //   <Crud /> 
