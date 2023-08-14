@@ -10,7 +10,7 @@ function Home() {
         <h1>Ride on 2023</h1>
         <h1>Operation Fortune</h1>
     </div>
-    )
+    )  
 }
 
 export default Home
