@@ -2,17 +2,21 @@ import React, { useState } from 'react'
 
 const Form = () => {
     const [fName, setFName] = useState('')
-    const [age, setAge] = useState('')
+    const [result, setResult] = useState('')
+    const handleSubmit = (event) => {
+        event.preventDefault()
+        const resultText =`My First Name is ${fName}`
+        setResult(resultText)
+    }
     return(
-        <form>
+        <form onSubmit={handleSubmit}>
             <input
             type='text'
             value={fName}
             onChange={(event) => {
                 setFName(event.target.value)
             }} />
-            
-            <p>{fName}</p>
+            <h1>{result}</h1>
         </form>
     )
 }
