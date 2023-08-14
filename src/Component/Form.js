@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 const Form = () => {
     const [fName, setFName] = useState('')
     const [result, setResult] = useState('')
+    
     const handleSubmit = (event) => {
         event.preventDefault()
         const resultText =`My First Name is ${fName}`
