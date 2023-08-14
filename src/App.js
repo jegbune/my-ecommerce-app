@@ -3,31 +3,18 @@ import './App.css';
 import Menu from './Component/Menu';
 import Form from './Component/Form'
 import Crud from './Component/Crud';
-import {Routes, Route} from 'react-router-dom'
-import Layout from './pages/Layout'
-import Home from './pages/Home'
-import Blogs from './pages/Blogs'
-import Contact from './pages/Contact'
-import NoPage from './pages/NoPage.js';
 
 function App() {
   return (
 
-      <div className='App'>
-        <Routes>
-          <Route path='/' element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path='blogs' element={<Blogs />} />
-            <Route path='contact' element={<Contact />} />
-            <Route path='*' element={<NoPage />} />
-          </Route>
-        </Routes>
-      </div>
+      // <div className='App'>
+        
+      // </div>
 
     // <div className="App">
     //   <Crud /> 
     //   <Menu /> 
-    //   <Form /> 
+      <Form /> 
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />
     //     <p>
