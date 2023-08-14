@@ -15,6 +15,9 @@ function Layout() {
                 <li>
                     <Link to='/contact'>Contact</Link>
                 </li>
+                <li>
+                    <Link to='*'>Nopage</Link>
+                </li>
             </ul>
         </nav>
 
