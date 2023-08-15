@@ -6,17 +6,31 @@ const Form = () => {
     
     const handleChange = (event) => {
         const name = event.target.name;
+        const age = event.target.age;
         const value = event.target.value;
-        setInput(values => ({...values, [name]: value}))
+        setInput(values => ({...values, [name]: value, [age]:value}))
     }
     const handleSubmit = (event) => {
         event.preventDefault()
-        const resultText =`My First Name is ${input.name}`
+        const resultText =`My First Name is ${input.name},
+        I am ${input.age} years old`
         setFinal(resultText)
     }
 
     return(
         <form onSubmit={handleSubmit}>
+            <input
+            type='text'
+            name='name'
+            value={input.name}
+            onChange={handleChange}
+            />
+            <input
+            type='number'
+            name='age'
+            value={input.age}
+            onChange={handleChange}
+            />
             <input
             type='text'
             name='name'
