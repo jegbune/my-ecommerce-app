@@ -1,23 +1,29 @@
 import React, { useState } from 'react'
 
 const Form = () => {
-    const [fName, setFName] = useState('')
-    const [result, setResult] = useState('')
+    const [input, setInput] = useState('')
+    const [final, setFinal] = useState('')
     
+    const handleChange = (event) => {
+        const name = event.target.name;
+        const value = event.target.value;
+        setInput(values => ({...values, [name]: value}))
+    }
     const handleSubmit = (event) => {
         event.preventDefault()
-        const resultText =`My First Name is ${fName}`
-        setResult(resultText)
+        const resultText =`My First Name is ${input.name}`
+        setFinal(resultText)
     }
+
     return(
         <form onSubmit={handleSubmit}>
             <input
             type='text'
-            value={fName}
-            onChange={(event) => {
-                setFName(event.target.value)
-            }} />
-            <h1>{result}</h1>
+            name='name'
+            value={input.name}
+            onChange={handleChange}
+            />
+            <h1>{final}</h1>
         </form>
     )
 }
