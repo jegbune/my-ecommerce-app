@@ -3,19 +3,23 @@ import './App.css';
 import Menu from './Component/Menu';
 import Form from './Component/Form'
 import Crud from './Component/Crud';
-import {Routes, Route} from 'react-router-dom'
-import Home from './pages/Home'
-import About from './pages/About'
-import Contact from './pages/Contact'
+// import {Routes, Route} from 'react-router-dom'
+// import Home from './pages/Home'
+// import About from './pages/About'
+// import Contact from './pages/Contact'
+import Todos from './Component/Todos';
 
 function App() {
   return (
 
-    <Routes>
-      <Route path='/' element = {<Home />} />
-      <Route path='/About' element = {<About />} />
-      <Route path='/Contact' element = {<Contact />} />
-    </Routes>        
+    <div className='app'>
+      <Todos />
+    </div> 
+    // <Routes>
+    //   <Route path='/' element = {<Home />} />
+    //   <Route path='/About' element = {<About />} />
+    //   <Route path='/Contact' element = {<Contact />} />
+    // </Routes>        
 
     // <div className="App">
     //   <Crud /> 
