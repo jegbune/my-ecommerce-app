@@ -3,7 +3,7 @@ import Todo from './Todo';
 
 function Todos() {
     const [count, setCount] = useState(0);
-    const [todos, setTodos] = useState(['todo 1', 'todo2'])
+    const [todo, setTodo] = useState(['todo 1', 'todo2'])
 
     const increment = () => {
         setCount((c) => c + 1);
@@ -11,7 +11,7 @@ function Todos() {
 
     return (
         <>
-        <Todo todos={todo}
+        <Todo todo={todo} />
         <div>
             Count: {count}
             <button onClick={increment}>+</button>
