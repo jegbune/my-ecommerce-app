@@ -21,7 +21,7 @@ const Form = () => {
             <input
             type='text'
             name='name'
-            value={input.name || ''}
+            value={input.name }
             onChange={handleChange}
             />
             </label><br />
@@ -29,7 +29,7 @@ const Form = () => {
             <input
             type='number'
             name='age'
-            value={input.age || ''}
+            value={input.age}
             onChange={handleChange}
             />
             </label>
