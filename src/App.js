@@ -8,13 +8,15 @@ import Crud from './Component/Crud';
 // import About from './pages/About'
 // import Contact from './pages/Contact'
 import Todos from './Component/Todos';
-
+import Styling from './Component/Styling.js'
 function App() {
   return (
 
     <div className='app'>
-      <Todos />
+      <Styling/>
     </div> 
+
+  //  <Todos /> 
     // <Routes>
     //   <Route path='/' element = {<Home />} />
     //   <Route path='/About' element = {<About />} />
