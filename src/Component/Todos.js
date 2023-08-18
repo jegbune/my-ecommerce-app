@@ -12,6 +12,7 @@ function Todos() {
     return (
         <>
         <Todo todo={todo} />
+        <hr />
         <div>
             Count: {count}
             <button onClick={increment}>+</button>
