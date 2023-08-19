@@ -2,31 +2,48 @@ import React, { useState } from 'react'
 
 
 function State() {
-    const [color, setColor] = useState('Red')
+    const [cars,setCar] = useState([
+        {
+            brand: 'Ford',
+            model: 'Mustang',
+            year: 2004,
+            color:'red'
+        },
+        {
+            brand: 'Toyota',
+            model: 'Camry',
+            year: 2010,
+            color:'Gold'
+        },
+        {
+            brand: 'Honda',
+            model: 'Civic',
+            year: 2014,
+            color:'Black'
+        }
+    ])
+
+    const updateCars  = () => {
+        setCar(prevState => {
+            const updatedCars = [...prevState]
+           updatedCars[2] = {...updatedCars[2], color:'Silver'};
+           return updatedCars
+        })
+    }
 
     return (
         <>
-        <h2>My Favourite color is {color}</h2>
+        {cars.map((car) => (
+            <p>I bought a {car.brand} {car.model} car, {car.year} model. it colour is {car.color} 
+            </p>
+
+        ))
+        }
+
         <button
         type='button'
-        onClick={() => {setColor('Blue')}}>
-            Blue
-        </button>
-        <button
-        type='button'
-        onClick={() => {setColor('Black')}}>
-            Black
-        </button>
-        <button
-        type='button'
-        onClick={() => {setColor('Yellow')}}>
-            Yellow
-        </button>
-        <button
-        type='button'
-        onClick={() => {setColor('White')}}>
-            White
-        </button>
+        onClick= {updateCars}>third color</button>
+                
         </>
     )
 }
