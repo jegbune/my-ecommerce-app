@@ -9,11 +9,15 @@ import Crud from './Component/Crud';
 // import Contact from './pages/Contact'
 import Todos from './Component/Todos';
 import Styling from './Component/Styling.js'
+import State from './Component/State'
+
+
 function App() {
   return (
 
     <div className='app'>
-      <Styling/>
+      {/* <Styling/> */}
+      <State />
     </div> 
 
   //  <Todos /> 
