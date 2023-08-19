@@ -1,15 +1,10 @@
 import React from "react";
+import styles from './my-style.module.css'
 
 const Styling = () => {
 
-    const myStyle = {
-        color:'white',
-        backgroundColor:'DodgerBlue',
-        padding: '10px',
-    }
-
     return(
-        <h2 style={myStyle}> This is Heading 2 paragraph</h2>
+        <h2 className={styles.title}> This is Heading 2 paragraph</h2>
     )
 }
 
