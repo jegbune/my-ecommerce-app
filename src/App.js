@@ -10,6 +10,7 @@ import Crud from './Component/Crud';
 import Todos from './Component/Todos';
 import Styling from './Component/Styling.js'
 import State from './Component/State'
+import Timer from './Component/Timer';
 
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
 
     <div className='app'>
       {/* <Styling/> */}
-      <State />
+      {/* <State /> */}
+      <Timer />
     </div> 
 
   //  <Todos /> 
