@@ -26,7 +26,9 @@ function State() {
     const updateCars  = () => {
         setCar(prevState => {
             const updatedCars = [...prevState]
-           updatedCars[2] = {...updatedCars[2], color:'Silver'};
+           updatedCars[2] = {...updatedCars[2],
+            model: 'Odyseey',
+            color:'Silver'};
            return updatedCars
         })
     }
@@ -42,7 +44,7 @@ function State() {
 
         <button
         type='button'
-        onClick= {updateCars}>third color</button>
+        onClick= {updateCars}>Edit Third Row </button>
                 
         </>
     )
