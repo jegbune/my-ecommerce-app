@@ -12,6 +12,7 @@ import Styling from './Component/Styling.js'
 import State from './Component/State'
 import Timer from './Component/Timer';
 import UseEffect from './Component/useEffect';
+import Counter from './Component/Counter';
 
 
 function App() {
@@ -20,8 +21,9 @@ function App() {
     <div className='app'>
       {/* <Styling/> */}
       {/* <State /> */}
-      <Timer />
-      <UseEffect />
+      {/* <Timer /> */}
+      {/* <UseEffect /> */}
+      <Counter />
     </div> 
 
   //  <Todos /> 
