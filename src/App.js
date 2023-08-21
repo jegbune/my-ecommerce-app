@@ -11,6 +11,7 @@ import Todos from './Component/Todos';
 import Styling from './Component/Styling.js'
 import State from './Component/State'
 import Timer from './Component/Timer';
+import UseEffect from './Component/useEffect';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       {/* <Styling/> */}
       {/* <State /> */}
       <Timer />
+      <UseEffect />
     </div> 
 
   //  <Todos /> 
