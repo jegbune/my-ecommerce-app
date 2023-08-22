@@ -9,7 +9,7 @@ function Timer() {
         },1000)
 
         return () => clearTimeout(timer)
-        }, [])
+        },[])
     
     return (
        <h1>I've rendered {count} times!</h1> 
