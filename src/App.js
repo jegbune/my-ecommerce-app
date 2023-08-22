@@ -21,9 +21,9 @@ function App() {
     <div className='app'>
       {/* <Styling/> */}
       {/* <State /> */}
-      {/* <Timer /> */}
+      <Timer />
       {/* <UseEffect /> */}
-      <Counter />
+      {/* <Counter /> */}
     </div> 
 
   //  <Todos /> 
