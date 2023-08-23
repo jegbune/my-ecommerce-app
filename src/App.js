@@ -13,18 +13,18 @@ import State from './Component/State'
 import Timer from './Component/Timer';
 import UseEffect from './Component/useEffect';
 import Counter from './Component/Counter';
-
+import UseContext1 from './Component/Component/useContext1';
 
 function App() {
   return (
-
-    <div className='app'>
-      {/* <Styling/> */}
-      {/* <State /> */}
-      <Timer />
-      {/* <UseEffect /> */}
-      {/* <Counter /> */}
-    </div> 
+    <UseContext1 />
+    // <div className='app'>
+    //   {/* <Styling/> */}
+    //   {/* <State /> */}
+    //   {/* <Timer /> */}
+    //   {/* <UseEffect /> */}
+    //   {/* <Counter /> */}
+    // </div> 
 
   //  <Todos /> 
     // <Routes>
