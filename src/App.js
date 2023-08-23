@@ -13,7 +13,7 @@ import State from './Component/State'
 import Timer from './Component/Timer';
 import UseEffect from './Component/useEffect';
 import Counter from './Component/Counter';
-import UseContext1 from './Component/Component/useContext1';
+import UseContext1 from './Component/useContext1';
 
 function App() {
   return (
