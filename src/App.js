@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import Nav from './Component/ecommerceComponent/nav';
 // import Menu from './Component/Menu';
 // import Form from './Component/Form'
 // import Crud from './Component/Crud';
@@ -17,7 +18,7 @@ import './App.css';
 
 function App() {
   return (
-    
+    <Nav />
     // <UseContext1 />
     // <div className='app'>
     //   {/* <Styling/> */}
