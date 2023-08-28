@@ -11,4 +11,11 @@
     padding: 10px 30px;
     width: 100%;
     background: #010f1c;
+    display: flex
+}
+
+.free .icon 
+{
+    color: #f3b123;
+    font-size: 22px;
 }

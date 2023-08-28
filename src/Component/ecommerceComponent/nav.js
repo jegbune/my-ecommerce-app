@@ -5,7 +5,10 @@ function Nav() {
     return (
         <>
         <div className='free'>
-            <p><FaTruckMoving/> Free Shipping when shopping upto $1000</p>
+                <div className='icon'>
+                <FaTruckMoving/> 
+                </div>
+            <p>Free Shipping when shopping upto $1000</p>
         </div>
         </>
     )
