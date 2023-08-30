@@ -1,8 +1,13 @@
 import React from 'react'
+import { FaTruckMoving } from 'react-icons/fa'  
 
 function Nav() {
     return (
-        <div>Nav</div>
+        <>
+        <div className='free'>
+            <p><FaTruckMoving/></p>
+        </div>
+        </>
     )
 }
 
