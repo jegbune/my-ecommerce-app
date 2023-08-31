@@ -1,12 +1,12 @@
 import React from 'react'
-// import { FaTruckMoving } from 'react-icons/fa'  
+import { FaTruckMoving } from 'react-icons/fa'  
 import './nav.css'
 function Nav() {
     return (
         <>
         <div className='free'>
                 <div className='icon'>
-                {/* <FaTruckMoving/>  */}
+                <FaTruckMoving/> 
                 </div>
             <p>FREE Shipping when shopping upto $1000</p>
         </div>
