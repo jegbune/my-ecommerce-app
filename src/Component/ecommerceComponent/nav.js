@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaTruckMoving } from 'react-icons/fa'  
 import './nav.css'
+
 function Nav() {
     return (
         <>
@@ -13,7 +14,7 @@ function Nav() {
         <div className='main_header'>
             <div className='container'>
                 <div className='logo'>
-                    <img src=''></img>
+                    <img src='../icons8-logo-ios-16/icons8-logo-50.svg'></img>
                 </div>
 
             </div>            
