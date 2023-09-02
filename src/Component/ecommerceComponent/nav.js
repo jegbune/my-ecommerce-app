@@ -1,6 +1,8 @@
 import React from 'react'
 import { FaTruckMoving } from 'react-icons/fa'  
 import { AiOutlineHeart } from 'react-icons/ai'  
+import { BsBagCheck } from 'react-icons/bs'  
+import { AiOutlineUser } from 'react-icons/ai'  
 import './nav.css'
 
 function Nav() {
@@ -22,7 +24,14 @@ function Nav() {
                     <button>Search</button>
                 </div>
                 <div className='icon'>
+                    <div className='account'> 
+                        <div className='user_icon'>
+                        <AiOutlineUser />
+                        </div>
+                        <p> Hello, User</p>
+                    </div>
                     <AiOutlineHeart />
+                    <BsBagCheck />
 
                 </div>
 
