@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaTruckMoving } from 'react-icons/fa'  
+import { AiOutlineHeart } from 'react-icons/ai'  
 import './nav.css'
 
 function Nav() {
@@ -14,8 +15,17 @@ function Nav() {
         <div className='main_header'>
             <div className='container'>
                 <div className='logo'>
-                    <img src='../icons8-logo-ios-16/icons8-logo-50.svg'></img>
+                    <img src='../icons8-logo-ios-16/icons8-logo-50.svg' />
                 </div>
+                <div className = 'search_box'>
+                    <input type = 'text' value='' placeholder='Enter The Product Name'  autoComplete='off'/>
+                    <button>Search</button>
+                </div>
+                <div className='icon'>
+                    <AiOutlineHeart />
+
+                </div>
+
 
             </div>            
         </div>
