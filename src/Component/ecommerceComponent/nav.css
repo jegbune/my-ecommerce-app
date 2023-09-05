@@ -62,10 +62,16 @@
 
 .main_header .container .icon {
     display: flex;
-
+    margin-right: 50px;
 }
 
-.main_header .container .icon .user_aaount{
+.main_header .container .icon .account{
     display: flex;
+    margin-right: 30px; 
+}
 
+.main_header .container .icon .account .user-icon{
+    margin-right: 10px;
+    font-size: 22px;
+    color: #010f1c; 
 }
