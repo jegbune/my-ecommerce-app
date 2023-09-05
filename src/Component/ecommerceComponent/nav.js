@@ -30,11 +30,13 @@ function Nav() {
                         </div>
                         <p> Hello, User</p>
                     </div>
-                    <AiOutlineHeart />
-                    <BsBagCheck />
+                    <div className= 'second-icon'>
+                    <p><AiOutlineHeart /></p>
+                    <p><BsBagCheck /></p>
+                    </div>
 
                 </div>
-
+ 
 
             </div>            
         </div>

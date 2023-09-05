@@ -63,6 +63,7 @@
 .main_header .container .icon {
     display: flex;
     margin-right: 50px;
+    border: 1px solid black;
 }
 
 .main_header .container .icon .account{
@@ -74,4 +75,21 @@
     margin-right: 10px;
     font-size: 22px;
     color: #010f1c; 
+}
+
+.main_header .container .icon .account p {
+    margin-right: 5px;
+    margin-top: 2px
+}
+
+.main_header .container .icon .second-icon {
+    display: flex;
+    margin-right: 5px;
+    justify-content: space-between;
+}
+
+.main_header .container .icon .second-icon p {
+    margin-right: 5px;
+    font-size: 22px;
+    cursor: pointer ;
 }
