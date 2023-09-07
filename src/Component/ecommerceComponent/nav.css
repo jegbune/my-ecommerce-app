@@ -63,7 +63,6 @@
 .main_header .container .icon {
     display: flex;
     margin-right: 50px;
-    border: 1px solid black;
 }
 
 .main_header .container .icon .account{

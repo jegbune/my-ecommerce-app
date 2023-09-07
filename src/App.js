@@ -19,9 +19,7 @@ import Nav from './Component/ecommerceComponent/nav';
 
 function App() {
   return (
-    <BrowserRouter>
     <Nav />
-    </BrowserRouter>
     // <UseContext1 />
     // <div className='app'>
     //   {/* <Styling/> */}
