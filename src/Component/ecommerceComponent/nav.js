@@ -4,6 +4,7 @@ import { AiOutlineHeart } from 'react-icons/ai'
 import { BsBagCheck } from 'react-icons/bs'  
 import { AiOutlineUser } from 'react-icons/ai'  
 import './nav.css'
+import { Link } from 'react-router-dom'
 
 function Nav() {
     return (
@@ -31,8 +32,8 @@ function Nav() {
                         <p> Hello, User</p>
                     </div>
                     <div className= 'second-icon'>
-                    <p><AiOutlineHeart /></p>
-                    <p><BsBagCheck /></p>
+                    <Link to ='/' className='link'><AiOutlineHeart /></Link>
+                    <Link to = '/' className='link'><BsBagCheck /> </Link>
                     </div>
 
                 </div>

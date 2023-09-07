@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter } from 'react-router-dom'
 import Nav from './Component/ecommerceComponent/nav';
 // import Menu from './Component/Menu';
 // import Form from './Component/Form'
@@ -18,7 +19,9 @@ import Nav from './Component/ecommerceComponent/nav';
 
 function App() {
   return (
+    <BrowserRouter>
     <Nav />
+    </BrowserRouter>
     // <UseContext1 />
     // <div className='app'>
     //   {/* <Styling/> */}
