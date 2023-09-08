@@ -41,6 +41,23 @@ function Nav() {
 
             </div>            
         </div>
+
+        <div className='header'>
+            <div className='contact'>
+                <ul>
+                    <li> 
+                        <link to = '/'>Home</link>
+                    </li>
+                    <li> 
+                        <link to = '/'>Home</link>
+                    </li>
+                    <li> 
+                        <link to = '/'>Home</link>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
         </>
     )
 }
