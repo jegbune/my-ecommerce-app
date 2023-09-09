@@ -32,8 +32,8 @@ function Nav() {
                         <p> Hello, User</p>
                     </div>
                     <div className= 'second-icon'>
-                    <Link to ='/' className='link'><AiOutlineHeart /></Link>
-                    <Link to = '/cart' className='link'><BsBagCheck /> </Link>
+                    {/* <Link to ='/' className='link'><AiOutlineHeart /></Link>
+                    <Link to = '/cart' className='link'><BsBagCheck /> </Link> */}
                     </div>
 
                 </div>
@@ -46,13 +46,16 @@ function Nav() {
             <div className='contact'>
                 <ul>
                     <li> 
-                        <link to = '/'>Home</link>
+                        {/* <link to = '/'>Home</link> */}
                     </li>
                     <li> 
-                        <link to = '/'>Home</link>
+                        {/* <link to = '/product'>Pruduct</link> */}
                     </li>
                     <li> 
-                        <link to = '/'>Home</link>
+                        {/* <link to = '/about'>About</link> */}
+                    </li>
+                    <li> 
+                        {/* <link to = '/contact'>Contact</link> */}
                     </li>
                 </ul>
             </div>
