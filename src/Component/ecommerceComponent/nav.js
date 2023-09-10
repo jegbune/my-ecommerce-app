@@ -4,7 +4,6 @@ import { AiOutlineHeart } from 'react-icons/ai'
 import { BsBagCheck } from 'react-icons/bs'  
 import { AiOutlineUser } from 'react-icons/ai'  
 import './nav.css'
-import { Link } from 'react-router-dom'
 
 function Nav() {
     return (
