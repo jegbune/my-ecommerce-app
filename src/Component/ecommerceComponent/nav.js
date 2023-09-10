@@ -28,12 +28,12 @@ function Nav() {
                     <div className='account'> 
                         <div className='user_icon'>
                         <AiOutlineUser />
-                        </div>
+                         </div>
                         <p> Hello, User</p>
                     </div>
                     <div className= 'second-icon'>
                     <Link to ='/' className='link'><AiOutlineHeart /></Link>
-                    <Link to = '/' className='link'><BsBagCheck /> </Link>
+                    <Link to = '/cart' className='link'><BsBagCheck /> </Link>
                     </div>
 
                 </div>
