@@ -4,6 +4,7 @@ import { AiOutlineHeart } from 'react-icons/ai'
 import { BsBagCheck } from 'react-icons/bs'  
 import { AiOutlineUser } from 'react-icons/ai'  
 import './nav.css'
+import { Link } from 'react-router-dom'
 
 function Nav() {
     return (
@@ -17,7 +18,7 @@ function Nav() {
         <div className='main_header'>
             <div className='container'>
                 <div className='logo'>
-                    <img src='../icons8-logo-ios-16/icons8-logo-50.svg' />
+                    <img src='../icons8-logo-ios-16/icons8-logo-50.svg' alt='' />
                 </div>
                 <div className = 'search_box'>
                     <input type = 'text' value='' placeholder='Search Your products...'  autoComplete='off'/>
@@ -31,8 +32,10 @@ function Nav() {
                         <p> Hello, User</p>
                     </div>
                     <div className= 'second-icon'>
-                    {/* <Link to ='/' className='link'><AiOutlineHeart /></Link>
-                    <Link to = '/cart' className='link'><BsBagCheck /> </Link> */}
+                    <Link to ='/' className='link'>
+                    <AiOutlineHeart />
+                    </Link>
+                    <Link to = '/cart' className='link'><BsBagCheck /> </Link>
                     </div>
 
                 </div>
