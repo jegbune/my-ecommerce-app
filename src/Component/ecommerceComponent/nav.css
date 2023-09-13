@@ -77,11 +77,6 @@
     cursor: pointer;
 }
 
-.main_header .container .icon .account .user_icon{
-    margin-right: 10px;
-    font-size: 22px;
-    color: #010f1c; 
-}
 
 .main_header .container .icon .account p {
     margin-right: 5px;
@@ -90,8 +85,6 @@
 
 .main_header .container .icon .second-icon {
     display: flex;
-    margin-right: 5px;
-    justify-content: space-between;
 }
 
 .main_header .container .icon .second-icon .link {
