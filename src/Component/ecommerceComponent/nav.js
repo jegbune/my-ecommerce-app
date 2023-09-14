@@ -3,6 +3,7 @@ import { FaTruckMoving } from 'react-icons/fa'
 import { AiOutlineHeart } from 'react-icons/ai'  
 import { BsBagCheck } from 'react-icons/bs'  
 import { AiOutlineUser } from 'react-icons/ai'  
+import { CiLogin } from 'react-icons/ci'  
 import './nav.css'
 import { Link } from 'react-router-dom'
 
@@ -45,7 +46,7 @@ function Nav() {
         </div>
 
         <div className='header'>
-            <div className='contact'>
+            <div className='container'>
                 <ul>
                     <li> 
                         <Link to = '/'>Home</Link>
@@ -60,6 +61,9 @@ function Nav() {
                         <Link to = '/contact'>Contact</Link>
                     </li>
                 </ul>
+                <div className='auth'>
+                    <CiLogin />
+                </div>
             </div>
 
         </div>
