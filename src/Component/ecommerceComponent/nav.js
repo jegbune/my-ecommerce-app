@@ -48,16 +48,16 @@ function Nav() {
             <div className='contact'>
                 <ul>
                     <li> 
-                        {/* <link to = '/'>Home</link> */}
+                        <Link to = '/'>Home</Link>
                     </li>
                     <li> 
-                        {/* <link to = '/product'>Pruduct</link> */}
+                        <Link to = '/product'>Pruduct</Link>
                     </li>
                     <li> 
-                        {/* <link to = '/about'>About</link> */}
+                        <Link to = '/about'>About</Link>
                     </li>
                     <li> 
-                        {/* <link to = '/contact'>Contact</link> */}
+                        <Link to = '/contact'>Contact</Link>
                     </li>
                 </ul>
             </div>
