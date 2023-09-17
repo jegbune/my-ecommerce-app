@@ -65,8 +65,8 @@ function Nav() {
                 </ul>
                 </div>
                 <div className='auth'>
-                    <CiLogin />
-                    <CiLogout />
+                    <button><CiLogin /></button>
+                    <button><CiLogout /></button> 
                 </div>
             </div>
 
