@@ -15,12 +15,23 @@ import Nav from './Component/ecommerceComponent/Nav';
 // import UseEffect from './Component/useEffect';
 // import Counter from './Component/Counter';
 // import UseContext1 from './Component/UseContext1';
+import { Auth0Provider } from '@auth0/auth0-react';
+
+
+
 
 function App() {
   return (
     // <Routes>
       // <Route>
+      <Auth0Provider
+      domain="dev-8r17bfwspua1zyq2.us.auth0.com"
+      clientId="bu2wBb1Kpvm6VjzcRee1Rjduey7Iunbz"
+      authorizationParams={{
+      redirect_uri: window.location.origin
+    }}>
       <Nav />
+      </Auth0Provider>
       // </Route>
     // </Routes>
     // <UseContext1 />

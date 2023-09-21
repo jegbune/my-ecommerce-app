@@ -7,10 +7,10 @@ import { CiLogin } from 'react-icons/ci'
 import { CiLogout } from 'react-icons/ci'  
 import './nav.css'
 import { Link } from 'react-router-dom'
-// import { useAuth0 } from "@auth0/auth0-react";
+import { useAuth0 } from "@auth0/auth0-react";
 
 function Nav() {
-    // const { loginWithRedirect } = useAuth0();
+    const { loginWithRedirect, logout } = useAuth0();
     return (
         <>
         <div className='free'>
@@ -67,8 +67,8 @@ function Nav() {
                 </ul>
                 </div>
                 <div className='auth'>
-                    {/* <button onClick={() => loginWithRedirect()}><CiLogin /></button> */}
-                    <button><CiLogout /></button> 
+                    <button onClick={() => loginWithRedirect()}><CiLogin /></button>
+                    <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}><CiLogout /></button> 
                 </div>
             </div>
 
