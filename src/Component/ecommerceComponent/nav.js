@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 import { useAuth0 } from "@auth0/auth0-react";
 
 function Nav() {
-    const { loginWithRedirect, logout } = useAuth0();
+    const { loginWithRedirect, logout, user, isAuthenticated, isLoading } = useAuth0();
     return (
         <>
         <div className='free'>
@@ -29,12 +29,16 @@ function Nav() {
                     <button>Search</button>
                 </div>
                 <div className='icon'>
+                    
+                    {isAuthenticated && 
                     <div className='account'> 
                         <div className='user_icon'>
                         <AiOutlineUser />
-                         </div>
-                        <p> Hello, User</p>
+                      </div>
+                        <p> Hello, {user.name}</p>
                     </div>
+                    }
+
                     <div className= 'second-icon'>
                     <Link to ='/' className='link'>
                     <AiOutlineHeart />
@@ -67,8 +71,10 @@ function Nav() {
                 </ul>
                 </div>
                 <div className='auth'>
+
+                    {isAuthenticated ?<button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}><CiLogout /></button> :
                     <button onClick={() => loginWithRedirect()}><CiLogin /></button>
-                    <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}><CiLogout /></button> 
+                    }
                 </div>
             </div>
 
