@@ -16,7 +16,7 @@ import Nav from './Component/ecommerceComponent/Nav';
 // import Counter from './Component/Counter';
 // import UseContext1 from './Component/UseContext1';
 import { Auth0Provider } from '@auth0/auth0-react';
-
+import Rout from './Component/ecommerceComponent/Rout';
 
 
 
@@ -31,6 +31,7 @@ function App() {
       redirect_uri: window.location.origin
     }}>
       <Nav />
+      <Rout />
       </Auth0Provider>
       // </Route>
     // </Routes>
