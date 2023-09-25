@@ -11,6 +11,9 @@ function Home() {
                     <h2>The Best Note Book Collection 2023</h2>
                     <Link to= '/product'>Shop Now <BsArrowRight/> </Link>
                 </div>
+                <div className='img-box'>
+                    <img src='./img/slider-img.png' alt='sliderimg' />
+                </div>
             </div>
         </div>
         </>
