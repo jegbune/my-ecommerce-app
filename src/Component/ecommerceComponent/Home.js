@@ -1,5 +1,6 @@
 import React from 'react'
-import { BrowserRouter, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import { BsArrowRight } from 'react-icons/bs'
 
 function Home() {
     return (
@@ -8,9 +9,7 @@ function Home() {
             <div className='container'>
                 <div className='detail'>
                     <h2>The Best Note Book Collection 2023</h2>
-                    <BrowserRouter>
-                    <Link to= '/product'>Shop Now</Link>
-                    </BrowserRouter>
+                    <Link to= '/product'>Shop Now <BsArrowRight/> </Link>
                 </div>
             </div>
         </div>
