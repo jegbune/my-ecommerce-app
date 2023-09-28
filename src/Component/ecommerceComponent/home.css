@@ -10,3 +10,13 @@
     width: 100%;
     background: #e3edf6;
 }
+
+.top_banner .container {
+    max-width: 100%;
+     display: flex;
+    justify-content: space-between;
+}
+
+.top_banner .container .detail {
+     
+}
