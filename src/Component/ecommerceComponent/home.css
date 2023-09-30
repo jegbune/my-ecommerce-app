@@ -18,5 +18,10 @@
 }
 
 .top_banner .container .detail {
-     
+    margin-top: 12%;     
+}
+
+.top_banner .container .detail h2 {
+    font-size: 42px;
+    color: #010f1c;
 }
