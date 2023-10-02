@@ -18,9 +18,40 @@ function Home() {
         </div>
         <div className='product_type'>
             <div className='container'>
+                
                 <div className='box'>
                     <div className='img_box'>
                         <img src='./img/Mobile Phone.png' alt='mobile' />
+                    </div>
+                    <div className='detail'>
+                        <p> 23 products </p>
+                    </div>
+                </div>
+                
+                <div className='box'>
+                    <div className='img_box'>
+                        <img src='./img/smart watch.png' alt='watch' />
+                    </div>
+                    <div className='detail'>
+                        <p> 18 products </p>
+                    </div>
+                </div>
+                
+                <div className='box'>
+                    <div className='img_box'>
+                        <img src='./img/headphone.png' alt='headphone' />
+                    </div>
+                    <div className='detail'>
+                        <p> 52 products </p>
+                    </div>
+                </div>
+                
+                <div className='box'>
+                    <div className='img_box'>
+                        <img src='./img/cpu heat.png' alt='cpu' />
+                    </div>
+                    <div className='detail'>
+                        <p> 63 products </p>
                     </div>
                 </div>
             </div>

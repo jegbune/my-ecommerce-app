@@ -42,3 +42,24 @@
     background: #0980ff;
     color: #fff;
 }
+
+.product_type {
+    padding: 30px 40px;
+    width: 100%;
+}
+
+.product_type .container{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+.box .img_box img {
+    max-width: 100%;
+    
+}
