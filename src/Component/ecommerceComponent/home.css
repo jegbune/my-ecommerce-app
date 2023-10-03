@@ -54,6 +54,17 @@
     justify-content: space-between;
 }
 
+.product_type .container .box {
+    padding: 10px 20px;
+    margin-left: 10px;
+}
+
+.product_type .container .box {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: #e8f4ff; 
+}
 
 
 
