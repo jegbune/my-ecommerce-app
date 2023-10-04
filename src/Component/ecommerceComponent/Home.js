@@ -48,7 +48,7 @@ function Home() {
                 
                 <div className='box'>
                     <div className='img_box'>
-                        <img src='./img/cpu heat.png' alt='cpu' />
+                        <img src='./img/laptop.png' alt='cpu' />
                     </div>
                     <div className='detail'>
                         <p> 63 products </p>
