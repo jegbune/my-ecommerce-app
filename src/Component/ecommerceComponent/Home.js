@@ -1,6 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { BsArrowRight } from 'react-icons/bs'
+import { FiTruck } from 'react-icons/fi'
+import { BsCurrencyDollar } from 'react-icons/bs'
+import { HiOutlineReceiptPercent } from 'react-icons/hi'
+import { BiHeadphone } from 'react-icons/bi'
 import './home.css'
 function Home() {
     return (
@@ -56,6 +60,49 @@ function Home() {
                 </div>
             </div>
         </div>
+
+        <div className='about'>
+            <div className='containter'>
+                <div className='box'>
+                    <div className='icon'> 
+                        <FiTruck />
+                    </div>
+                    <div className='detail'>
+                        <h3>Free Shipping</h3>
+                        <p>Order above $1000</p>
+                    </div>
+                    </div>
+                <div className='box'>
+                    <div className='icon'> 
+                        <BsCurrencyDollar />
+                    </div>
+                    <div className='detail'>
+                        <h3>Return & Refund</h3>
+                        <p>Money Back Guaranty</p>
+                    </div>
+                </div>
+                    
+                <div className='box'>
+                    <div className='icon'> 
+                        <HiOutlineReceiptPercent />
+                    </div>
+                    <div className='detail'>
+                        <h3>Member Discount</h3>
+                        <p>On every order</p>
+                    </div>
+                </div>
+
+                <div className='box'>
+                    <div className='icon'> 
+                        <BiHeadphone />
+                    </div>
+                    <div className='detail'>
+                        <h3>Member Discount</h3>
+                        <p>On every order</p>
+                    </div>
+                </div>
+            </div>
+            </div>
         </>
     )
 }
