@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { BsArrowRight } from 'react-icons/bs'
 import { FiTruck } from 'react-icons/fi'
 import { BsCurrencyDollar } from 'react-icons/bs'
-import { HiOutlineReceiptPercent } from 'react-icons/hi'
+import { CiPercent } from 'react-icons/ci'
 import { BiHeadphone } from 'react-icons/bi'
 import './home.css'
 function Home() {
@@ -62,7 +62,7 @@ function Home() {
         </div>
 
         <div className='about'>
-            <div className='containter'>
+            <div className='container'>
                 <div className='box'>
                     <div className='icon'> 
                         <FiTruck />
@@ -84,7 +84,7 @@ function Home() {
                     
                 <div className='box'>
                     <div className='icon'> 
-                        <HiOutlineReceiptPercent />
+                        <CiPercent />
                     </div>
                     <div className='detail'>
                         <h3>Member Discount</h3>
@@ -97,8 +97,8 @@ function Home() {
                         <BiHeadphone />
                     </div>
                     <div className='detail'>
-                        <h3>Member Discount</h3>
-                        <p>On every order</p>
+                        <h3>Customer Support</h3>
+                        <p>Every time call support</p>
                     </div>
                 </div>
             </div>
