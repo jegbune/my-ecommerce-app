@@ -20,6 +20,7 @@ function Home() {
                 </div>
             </div>
         </div>
+
         <div className='product_type'>
             <div className='container'>
                 
@@ -102,7 +103,15 @@ function Home() {
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div className='product'>
+            <div classname='container'>
+                <div className='box'>
+
+                </div>
             </div>
+        </div>
         </>
     )
 }
