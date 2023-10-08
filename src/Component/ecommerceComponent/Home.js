@@ -5,8 +5,10 @@ import { FiTruck } from 'react-icons/fi'
 import { BsCurrencyDollar } from 'react-icons/bs'
 import { CiPercent } from 'react-icons/ci'
 import { BiHeadphone } from 'react-icons/bi'
+import Homeproduct from './Homeproduct'
 import './home.css'
 function Home() {
+    // const [Homeproduct, setHomeProduct] = useState('Homeproduct') 
     return (
         <>
         <div className='top_banner'>
