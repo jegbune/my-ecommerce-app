@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { BsArrowRight } from 'react-icons/bs'
 import { FiTruck } from 'react-icons/fi'
@@ -8,7 +8,7 @@ import { BiHeadphone } from 'react-icons/bi'
 import Homeproduct from './Homeproduct'
 import './home.css'
 function Home() {
-    // const [Homeproduct, setHomeProduct] = useState('Homeproduct') 
+    const [homeProduct, setHomeProduct] = useState(Homeproduct)  
     return (
         <>
         <div className='top_banner'>
@@ -109,6 +109,21 @@ function Home() {
 
         <div className='product'>
             <div classname='container'>
+                {homeProduct.map((curElm) =>
+                {
+                    return
+                        (
+                            <>
+                                <div className='box' key={curElm.id}>
+                                    <div className='img_box'>
+                                        <img src={curElm.Img} alt={curElm.Title}/>                                
+                                    </div>
+                                </div>
+                            </>
+                        )
+                    
+                })
+            }
                 <div className='box'>
 
                 </div>
