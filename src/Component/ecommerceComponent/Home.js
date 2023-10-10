@@ -111,15 +111,12 @@ function Home() {
             <div classname='container'>
                 {homeProduct.map((curElm) =>
                 {
-                    return
-                        (
-                            <>
+                    return(
                                 <div className='box' key={curElm.id}>
                                     <div className='img_box'>
                                         <img src={curElm.Img} alt={curElm.Title}/>                                
                                     </div>
                                 </div>
-                            </>
                         )
                     
                 })
