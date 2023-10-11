@@ -6,6 +6,8 @@ import { BsCurrencyDollar } from 'react-icons/bs'
 import { CiPercent } from 'react-icons/ci'
 import { BiHeadphone } from 'react-icons/bi'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
+import { BsEye } from 'react-icons/bs'
+import { AiOutlineHeart } from 'react-icons/ai'
 import Homeproduct from './Homeproduct'
 import './home.css'
 function Home() {
@@ -116,7 +118,14 @@ function Home() {
                                         <img src={curElm.Img} alt={curElm.Title}/>                                
                                         <div classname='icon'>
                                             <AiOutlineShoppingCart/>
+                                            <BsEye />
+                                            <AiOutlineHeart />
                                         </div>
+                                    </div>
+                                    <div className='detail'>
+                                    <p>{curElm.Cat}</p>
+                                    <h3>{curElm.Title}</h3>
+                                    <h4>{curElm.Price} </h4>
                                     </div>
                                 </div>
                         )
