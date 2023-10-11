@@ -5,10 +5,10 @@ import { FiTruck } from 'react-icons/fi'
 import { BsCurrencyDollar } from 'react-icons/bs'
 import { CiPercent } from 'react-icons/ci'
 import { BiHeadphone } from 'react-icons/bi'
+import { AiOutlineShoppingCart } from 'react-icons/ai'
 import Homeproduct from './Homeproduct'
 import './home.css'
 function Home() {
-    const [homeProduct, setHomeProduct] = useState(Homeproduct)  
     return (
         <>
         <div className='top_banner'>
@@ -109,12 +109,14 @@ function Home() {
 
         <div className='product'>
             <div classname='container'>
-                {homeProduct.map((curElm) =>
-                {
+                {Homeproduct.map((curElm) =>{
                     return(
                                 <div className='box' key={curElm.id}>
                                     <div className='img_box'>
                                         <img src={curElm.Img} alt={curElm.Title}/>                                
+                                        <div classname='icon'>
+                                            <AiOutlineShoppingCart/>
+                                        </div>
                                     </div>
                                 </div>
                         )
