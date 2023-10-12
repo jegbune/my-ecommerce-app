@@ -110,22 +110,23 @@ function Home() {
         </div>
 
         <div className='product'>
-            <div classname='container'>
+            <h2>Top Products</h2>
+            <div className='container'>
                 {Homeproduct.map((curElm) =>{
                     return(
                                 <div className='box' key={curElm.id}>
                                     <div className='img_box'>
                                         <img src={curElm.Img} alt={curElm.Title}/>                                
                                         <div classname='icon'>
-                                            <AiOutlineShoppingCart/>
-                                            <BsEye />
-                                            <AiOutlineHeart />
+                                            <li><AiOutlineShoppingCart/></li>
+                                            <li><BsEye /></li>
+                                            <li><AiOutlineHeart /></li>
                                         </div>
                                     </div>
                                     <div className='detail'>
                                     <p>{curElm.Cat}</p>
                                     <h3>{curElm.Title}</h3>
-                                    <h4>{curElm.Price} </h4>
+                                    <h4>{curElm.Price} </   h4>
                                     </div>
                                 </div>
                         )
