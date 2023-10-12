@@ -129,8 +129,16 @@
     color: #9a9a9a;  
 }
 
+.product{
+    padding: 30px 40px;
+    width: 100%;
+}
 
-
+.product .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 
 
