@@ -129,15 +129,36 @@ function Home() {
                                     <h4>{curElm.Price} </   h4>
                                     </div>
                                 </div>
-                        )
-                    
+                        ) 
                 })
             }
-                <div className='box'>
-
-                </div>
             </div>
         </div>
+                
+        <div className='banner'>
+            <div className='detail'>
+                <h4>LATEST TECHNOLOGY ADDED</h4>
+                <h3>Apple iPad 10.2 9th Gen - 2021</h3>
+                <p> <BsCurrencyDollar /> 986</p>
+            </div>
+            <div className='img-box'>
+                <img src='./img/slider-img.png' alt='sliderimg'/>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                    
         </>
     )
 }
