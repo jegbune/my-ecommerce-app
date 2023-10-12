@@ -117,7 +117,7 @@ function Home() {
                                 <div className='box' key={curElm.id}>
                                     <div className='img_box'>
                                         <img src={curElm.Img} alt={curElm.Title}/>                                
-                                        <div classname='icon'>
+                                        <div className='icon'>
                                             <li><AiOutlineShoppingCart/></li>
                                             <li><BsEye /></li>
                                             <li><AiOutlineHeart /></li>

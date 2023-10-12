@@ -172,10 +172,30 @@
 .product .container .box .img_box img{
     width:300px;
     height: 250px;
-    margin-right: 50px;
+    /* margin-right: 50px; */
 }
 
+
 .product .container .box .img_box .icon {
-    position: absolute;
-    margin-left: 90px;
+    z-index: 1;
+    position: relative;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.product .container .box .img_box .icon li {
+    list-style: none;
+    padding: 10px;
+    color: #010f1c;
+    cursor: pointer;
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+    background: #fff;
+    transition: 0.5s;
+    font-size: 18px;
+}
+
+.product .container .box .img_box .icon li:hover {
+    background: #0980ff;
 }
