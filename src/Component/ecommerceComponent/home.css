@@ -166,7 +166,6 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #e2e0e0;
-
 }
 
 .product .container .box .img_box img{
@@ -186,7 +185,7 @@
     transition: 0.5s;
 }
 
-.product .container .box .img_box:hover .icon{
+.product .container .box:hover .img_box .icon{
     transform: translateX(-80px);
 }
 
@@ -232,3 +231,20 @@
     color:#0980ff;
     letter-spacing: 1px;
 }    
+
+.banner {
+    padding: 20px 30px;
+    width: 100%;
+}
+
+.banner .container {
+    padding: 30px 40px;
+    background: #0989ff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner .container .detail {
+      margin-top: 10%;
+}
