@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { BsArrowRight } from 'react-icons/bs'
 import { FiTruck } from 'react-icons/fi'
-import { BsCurrencyDollar } from 'react-icons/bs'
+// import { BsCurrencyDollar } from 'react-icons/bs'
 import { CiPercent } from 'react-icons/ci'
 import { BiHeadphone } from 'react-icons/bi'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
@@ -140,7 +140,7 @@ function Home() {
                 <div className='detail'>
                     <h4>LATEST TECHNOLOGY ADDED</h4>
                     <h3>Apple iPad 10.2 9th Gen - 2021</h3>
-                    <p><BsCurrencyDollar /> 986</p>
+                    <p>$ 986</p>
                 </div>
                 <div className='img-box'>
                     <img src='./img/slider-img.png' alt='sliderimg'/>

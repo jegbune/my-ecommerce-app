@@ -246,5 +246,27 @@
 }
 
 .banner .container .detail {
-      margin-top: 10%;
+    margin-top: 10%;
+    margin-left: 20px;
+}
+
+.banner .container .detail h4 {
+    color: #e3edf6;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.banner .container .detail h3 {
+    margin-top: 10px;
+    font-size: 42px;
+    margin-right: 20%;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.banner .container .detail p {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 32px;
+    letter-spacing: 1px;
 }
