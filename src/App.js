@@ -17,6 +17,7 @@ import Nav from './Component/ecommerceComponent/Nav';
 // import UseContext1 from './Component/UseContext1';
 import { Auth0Provider } from '@auth0/auth0-react';
 import Rout from './Component/ecommerceComponent/Rout';
+import Footer from './Component/ecommerceComponent/Footer';
 
 
 
@@ -32,6 +33,7 @@ function App() {
     }}>
       <Nav />
       <Rout />
+      <Footer />
       </Auth0Provider>
       // </Route>
     // </Routes>
