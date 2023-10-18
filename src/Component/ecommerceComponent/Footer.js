@@ -1,5 +1,6 @@
 import React from 'react'
-import { AiOutlineInstagram } from 'react-icons/ai'
+import { AiOutlineInstagram, AiOutlineTwitter } from 'react-icons/ai'
+import { BiLogoYoutube } from 'react-icons/bi'
 import { RiFacebookFill } from 'react-icons/ri'
 
 const Footer = () => {
@@ -16,8 +17,8 @@ const Footer = () => {
                         <div className='icon'>
                             <li><RiFacebookFill /></li>
                             <li><AiOutlineInstagram /></li>
-                            <li><RiFacebookFill /></li>
-                            <li><RiFacebookFill /></li>
+                            <li><AiOutlineTwitter /></li>
+                            <li><BiLogoYoutube /></li>
                         </div>
                     </div>
                 </div>
