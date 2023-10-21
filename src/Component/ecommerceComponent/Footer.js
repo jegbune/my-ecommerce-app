@@ -24,7 +24,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div classname= 'account'>
+                <div className= 'account'>
                     <h3>My Account</h3>
                     <ul>
                         <li>Account</li>
