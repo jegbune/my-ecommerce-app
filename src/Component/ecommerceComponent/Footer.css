@@ -24,7 +24,7 @@
 .footer .container .about .detail p {
     margin-top: 20px;
     font-size: 16px;
-    color: #828282;
+    color: #010f1c;
 }
 
 .footer .container .about .detail .icon {
@@ -75,22 +75,22 @@
     color: #0989ff;    
 }
 
-.footer .page .account {
+.footer .container .page {
     margin-right: 100px;
     margin-top: 30px;
 }
 
-.footer .page .account h3 {
+.footer .container .page h3 {
     font-size: 32px;
     color: #010f1c;
 }
 
-.footer .container .account ul {
+.footer .container .page ul {
     margin-top: 10px; 
     margin-left: 20px;
 }
 
-.footer .page .account ul li {
+.footer .container .page ul li {
     margin-top: 5px;
     color: #010f1c;
     font-size: 14px;
@@ -98,7 +98,7 @@
     cursor: pointer;
 }
 
-.footer .page .account ul li:hover {
+.footer .container .page ul li:hover {
     color: #0989ff;    
 }
 
