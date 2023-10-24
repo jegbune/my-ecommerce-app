@@ -64,4 +64,4 @@ const Productdetail =
         Img: './img/tp9.jpg'
     }
 ]
-export Productdetail
+export default Productdetail
