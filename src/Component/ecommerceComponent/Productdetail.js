@@ -61,7 +61,28 @@ const Productdetail =
         Title: "Microsoft Surface Pro 8-13' touchscreen",
         Cat: 'Tablet',
         Price: '$696',
-        Img: './img/tp9.jpg'
-    }
+        Img: './img/p9.jpg'
+    },
+    {
+        id: 10,
+        Title: "Playstation 4 2TB Slim Gaming Console",
+        Cat: 'Gaming',
+        Price: '$5036',
+        Img: './img/p10.jpg'
+    },
+    {
+        id: 11,
+        Title: "Echo Show 5 (2nd Gen) Adjustable Stand | Charcoal",
+        Cat: 'Electronics',
+        Price: '$198',
+        Img: './img/p11.jpg'
+    },
+    {
+        id: 12,
+        Title: "Echo  Dot smart speaker",
+        Cat: 'Electronics',
+        Price: '$793',
+        Img: './img/p12.jpg'
+    },
 ]
 export default Productdetail
