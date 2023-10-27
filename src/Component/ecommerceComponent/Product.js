@@ -2,7 +2,7 @@ import React from 'react'
 import Productdetail from './Productdetail'
 import { AiOutlineHeart, AiOutlineShoppingCart } from 'react-icons/ai'
 import { BsEye } from 'react-icons/bs'
-import './product.css'
+import './Product.css'
 
 function Product() {
 
@@ -42,7 +42,7 @@ function Product() {
                                     <div className='detail'>
                                     <p>{curElm.Cat}</p>
                                     <h3>{curElm.Title}</h3>
-                                    <h4>{curElm.Price} </   h4>
+                                    <h4>{curElm.Price} </h4>
                                     </div>
                                 </div>
                                     </>  
