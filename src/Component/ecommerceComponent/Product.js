@@ -25,7 +25,7 @@ function Product() {
                     </div>
                 </div>
                 <div className='productbox'>
-                    <div className='container'>
+                    <div className='contant'>
                         {
                             Productdetail.map((curElm)=> {
                                 return(
