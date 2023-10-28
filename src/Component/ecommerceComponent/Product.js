@@ -31,7 +31,7 @@ function Product() {
                                 return(
                                     <>
                                     <div className='box' key={curElm.id}>
-                                        <div className='img_box'>
+                                        <div className='img-box'>
                                             <img src={curElm.Img} alt={curElm.Title}/>                                
                                             <div className='icon'>
                                                 <li><AiOutlineShoppingCart /></li>
