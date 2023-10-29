@@ -123,3 +123,21 @@
 .products .container .productbox .contant .box .detail {
     margin-top: 10px;
 }
+
+.products .container .productbox .contant .box .detail h3 {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #010f1c;
+    transition: 0.5s;
+}
+
+.products .container .productbox .contant .box:hover .detail h3 {
+    color: #0989ff;
+}
+
+.products .container .productbox .contant .box .detail h4 {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #0989ff;
+    letter-spacing: 1px;
+}
